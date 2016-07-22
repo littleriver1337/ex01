@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - postgres@localhost" uuid="3e242dca-1386-4573-9925-f012824fc7e7">
+    <database-info product="PostgreSQL" version="9.6beta2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+      <database id="1" name="postgres">
+        <object-id>12669</object-id>
+        <visible>1</visible>
+      </database>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <visible>1</visible>
+        <introspection-state-number>874</introspection-state-number>
+        <introspection-timestamp>2016-07-22.13:01:59.348</introspection-timestamp>
+      </schema>
+      <schema id="3" parent="1" name="pg_catalog">
+        <object-id>11</object-id>
+      </schema>
+      <schema id="4" parent="1" name="pg_toast">
+        <object-id>99</object-id>
+      </schema>
+      <schema id="5" parent="1" name="pg_temp_1">
+        <object-id>11848</object-id>
+      </schema>
+      <schema id="6" parent="1" name="pg_toast_temp_1">
+        <object-id>11849</object-id>
+      </schema>
+      <schema id="7" parent="1" name="information_schema">
+        <object-id>12381</object-id>
+      </schema>
+      <sequence id="8" parent="2" name="info_id_seq">
+        <object-id>16399</object-id>
+        <state-number>869</state-number>
+      </sequence>
+      <sequence id="9" parent="2" name="product_productid_seq">
+        <object-id>16408</object-id>
+        <state-number>872</state-number>
+      </sequence>
+      <table id="10" parent="2" name="info">
+        <object-id>16393</object-id>
+        <state-number>869</state-number>
+      </table>
+      <table id="11" parent="2" name="product">
+        <object-id>16396</object-id>
+        <state-number>872</state-number>
+      </table>
+      <column id="12" parent="10" name="id">
+        <state-number>869</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;info_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <index id="13" parent="10" name="info_id_pk">
+        <object-id>16406</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="14" parent="10" name="info_id_uindex">
+        <object-id>16405</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="15" parent="10" name="info_id_pk">
+        <object-id>16407</object-id>
+        <columns>id</columns>
+        <underlying-index>info_id_pk</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="11" name="productid">
+        <state-number>872</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;product_productid_seq&apos;::regclass)</default-expression>
+      </column>
+      <index id="17" parent="11" name="product_ProductID_uindex">
+        <object-id>16414</object-id>
+        <columns>productid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="18" parent="11" name="product_productid_pk">
+        <object-id>16415</object-id>
+        <columns>productid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="19" parent="11" name="product_productid_pk">
+        <object-id>16416</object-id>
+        <columns>productid</columns>
+        <underlying-index>product_productid_pk</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
