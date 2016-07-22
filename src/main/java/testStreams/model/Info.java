@@ -1,7 +1,5 @@
 package testStreams.model;
 
-import testStreams.TestStreams01Application;
-
 import javax.persistence.*;
 
 /**
