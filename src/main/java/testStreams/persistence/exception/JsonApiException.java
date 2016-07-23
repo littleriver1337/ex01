@@ -1,4 +1,4 @@
-package testStreams.persistence;
+package testStreams.persistence.exception;
 
 /**
  * Created by Matt on 7/23/16.
