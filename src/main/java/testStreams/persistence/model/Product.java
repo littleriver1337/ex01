@@ -1,4 +1,7 @@
-package testStreams.persistence;
+package testStreams.persistence.model;
+
+import io.katharsis.resource.annotations.JsonApiId;
+import io.katharsis.resource.annotations.JsonApiResource;
 
 import javax.persistence.*;
 
@@ -7,10 +10,13 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "product")
+@JsonApiResource(type = "product")
 public class Product {
 
     @Id
-    @GeneratedValue
-    @Column(name = "productid")
-    Integer productid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "productid", nullable = false)
+    @JsonApiId
+    private int productid;
+
 }

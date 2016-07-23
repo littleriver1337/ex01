@@ -1,4 +1,4 @@
-package testStreams.persistence;
+package testStreams.persistence.exception;
 
 import io.katharsis.errorhandling.ErrorData;
 import io.katharsis.errorhandling.ErrorResponse;
