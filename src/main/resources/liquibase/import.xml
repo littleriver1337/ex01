@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="Matt (generated)" id="1469476560278-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence sequenceName="info_info_seq"/>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469476560278-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence sequenceName="product_productid_seq"/>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469476560278-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="info">
+            <column autoIncrement="true" name="info" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="info_pkey"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469476560278-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="product">
+            <column autoIncrement="true" name="productid" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="product_pkey"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
