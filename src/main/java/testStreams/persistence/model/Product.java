@@ -19,4 +19,44 @@ public class Product {
     @JsonApiId
     private int productid;
 
+    @Column(name = "amount", nullable = false)
+    private int amount;
+
+    @Column(name = "brand", nullable = false)
+    private String brand;
+
+    @Column(name = "value", nullable = false)
+    private float value;
+
+    public int getProductid() {
+        return productid;
+    }
+
+    public void setProductid(int productid) {
+        this.productid = productid;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public float getValue() {
+        return value;
+    }
+
+    public void setValue(float value) {
+        this.value = value;
+    }
 }

@@ -20,4 +20,42 @@
             </column>
         </createTable>
     </changeSet>
+    <changeSet author="Matt (generated)" id="1469500658757-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence sequenceName="info_id_seq"/>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469500658757-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createSequence sequenceName="product_productid_seq"/>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469500658757-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="info">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="info_pkey"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Matt (generated)" id="1469500658757-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="product">
+            <column autoIncrement="true" name="productid" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="product_pkey"/>
+            </column>
+            <column name="amount" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="brand" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="FLOAT4">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>
